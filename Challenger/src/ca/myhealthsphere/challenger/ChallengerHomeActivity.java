@@ -24,6 +24,7 @@ public class ChallengerHomeActivity extends Activity
 	public static final int LEADERBOARD_NAV_ID = 1;
 	public static final int REWARDS_NAV_ID = 2;
 	public static final int PROFILE_NAV_ID = 3;
+	public static final int TIMER_NAV_ID = 4;
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -71,6 +72,9 @@ public class ChallengerHomeActivity extends Activity
 	        	break;
 	        case PROFILE_NAV_ID:
 	        	newFragment = new ProfilePageFragment();
+	        	break;
+	        case TIMER_NAV_ID:
+	        	newFragment = new ActiveChallengeTimerFragment();
 	        	break;
         }
         if (newFragment != null) {

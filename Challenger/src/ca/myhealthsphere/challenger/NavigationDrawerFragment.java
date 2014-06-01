@@ -94,11 +94,12 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
-    	String[] items = new String[4];
+    	String[] items = new String[5];
         items[ChallengerHomeActivity.CHALLENGE_LIST_NAV_ID] = getString(R.string.title_challenge_list);
         items[ChallengerHomeActivity.LEADERBOARD_NAV_ID] = getString(R.string.title_leaderboard);
         items[ChallengerHomeActivity.REWARDS_NAV_ID] = getString(R.string.title_rewards);
         items[ChallengerHomeActivity.PROFILE_NAV_ID] = getString(R.string.title_profile);
+        items[ChallengerHomeActivity.TIMER_NAV_ID] = getString(R.string.title_timer);
         mDrawerListView.setAdapter(new ArrayAdapter<String>(
                 getActionBar().getThemedContext(),
                 android.R.layout.simple_list_item_activated_1,

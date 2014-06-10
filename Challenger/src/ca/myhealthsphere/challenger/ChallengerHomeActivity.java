@@ -4,6 +4,9 @@ import ca.myhealthsphere.challenger.pages.ChallengeListPageFragment;
 import ca.myhealthsphere.challenger.pages.LeaderboardPageFragment;
 import ca.myhealthsphere.challenger.pages.ProfilePageFragment;
 import ca.myhealthsphere.challenger.pages.RewardsPageFragment;
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
+import com.parse.ParseObject;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
@@ -42,6 +45,11 @@ public class ChallengerHomeActivity extends Activity
     	//Restore saved state of activity challenges
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_challenger_home);
+        
+        Parse.initialize(this, "KbeCbnYbyTjdsjlTXpI6wbsA8GcGHQ23gcR2cevo", "GLEgvH3bM1yoI2svHsx32801Zmdfdu2Ir1WTWuTa");
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);

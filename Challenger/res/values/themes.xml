@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="myHealthSphereTheme"
+           parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/mHSActionBar</item>
+        <item name="android:windowBackground">@color/LightGrey</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="mHSActionBar"
+           parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/LightSeaGreen</item>
+    </style>
+</resources>

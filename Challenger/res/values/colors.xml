@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- myHealthSphere colour settings -->
-    <color name="mhsActionBar">#FFFFFF</color>
-    <color name="mhsBackground">#FFFFFF</color>
+    <color name="mhsActionBar">#66CC66</color>
+    <color name="mhsBackground">#F2F2F2</color>
     
     <!-- w3c colours -->    
     <color name="white">#FFFFFF</color>

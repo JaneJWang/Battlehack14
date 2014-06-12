@@ -87,6 +87,7 @@ public class ChallengerHomeActivity extends Activity
         }
         if (newFragment != null) {
 	        transaction.replace(R.id.container, newFragment);
+	        transaction.addToBackStack(null);
 	        transaction.commit();
         } else {
         	Log.d(TAG, "Page Not Found");

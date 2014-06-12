@@ -18,17 +18,10 @@ public class ChallengeArrayAdapter extends ArrayAdapter<Challenge> {
 	
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		LayoutInflater inflater = (LayoutInflater) getContext()
-				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View rowView = inflater.inflate(R.layout.fragment_challenge_item, parent, false);
 		
-		Challenge challenge = getItem(position);
-		TextView title = (TextView) rowView.findViewById(R.id.challenge_item_title);
-		title.setText(challenge.getTitle());
-		TextView description = (TextView) rowView.findViewById(R.id.challenge_item_description);
-		description.setText(challenge.getDescription());
-		
-		return rowView;
+		ChallengeItemView challView = new ChallengeItemView(getContext(), getItem(position));
+				
+		return challView;
 	}
 
 }

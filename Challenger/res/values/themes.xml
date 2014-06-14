@@ -4,7 +4,7 @@
     <style name="myHealthSphereTheme"
            parent="@android:style/Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/mHSActionBar</item>
-        <item name="android:windowBackground">@color/mhsBackground</item>
+        <!-- <item name="android:windowBackground">@color/mhsBackground</item> -->
     </style>
 
     <!-- ActionBar styles -->
